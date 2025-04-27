@@ -1,0 +1,38 @@
+# ─── PYTHON ─────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ─── VSCODE/IDE ─────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ─── OS SYSTEM FILES ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── SECRETS ────────────────────────────────────────────────────
+secrets/
+*.json
+config/settings.json
+
+# ─── LOGS ───────────────────────────────────────────────────────
+*.log
+
+# ─── DBT ─────────────────────────────────────────────────────────
+dbt_modules/
+dbt_packages/
+
+# ─── OTHER OPTIONAL ─────────────────────────────────────────────
+*.sqlite3
+*.db
