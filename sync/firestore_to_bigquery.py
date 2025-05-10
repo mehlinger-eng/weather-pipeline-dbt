@@ -17,7 +17,7 @@ BQ_DATASET = "weather_data"
 BQ_TABLE = "weather_raw"
 
 firestore_client = firestore.Client(project=GCP_PROJECT_ID, database=FIRESTORE_DATABASE)
-bigquery_client = bigquery.Client(project=GCP_PROJECT_ID)
+bigquery_client = bigquery.Client(project=GCP_PROJECT_ID, location="US")
 
 def fetch_documents_from_firestore():
     """
