@@ -5,5 +5,10 @@ app = FastAPI()
 
 @app.get("/")
 def run_ingestion():
-    ingest()
-    return {"status": "✅ Ingestion complete"}
+    try:
+        ingest()
+        return {"status": "✅ Ingestion complete"}
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        return {"status": "❌ Failed", "error": str(e)}, 500
