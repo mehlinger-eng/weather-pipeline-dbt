@@ -1,0 +1,29 @@
+# Ignore Python cache and environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# Ignore OS files
+.DS_Store
+
+# Ignore logs and DBs
+*.log
+*.sqlite3
+*.db
+
+# Ignore secrets (but allow config/settings.json if needed)
+secrets/
+*.json
+!config/settings.json
+
+# Ignore Git and editor files
+.git/
+.gitignore
+.vscode/
+.idea/

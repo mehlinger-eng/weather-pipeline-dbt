@@ -22,3 +22,5 @@ requests==2.32.3
 rsa==4.9.1
 six==1.17.0
 urllib3==2.4.0
+fastapi==0.110.0
+uvicorn==0.29.0
