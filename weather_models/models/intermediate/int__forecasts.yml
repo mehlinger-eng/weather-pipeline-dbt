@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: int_forecasts
+    description: "Intermediate model with flattened weather forecasts and normalized hourly buckets."
+    columns:
+      - name: hashed_id
+        description: "Deterministic hashed ID based on forecast timestamp and location."
+      - name: forecast_made_day
+        description: "The date when the forecast was ingested."
+      - name: forecast_hour
+        description: "The hour bucket (00:00, 06:00, 12:00, 18:00) of the forecast."
+      - name: forecast_timestamp
+        description: "Original timestamp the forecast refers to."
+      - name: location
+        description: "City or location name."
+      - name: latitude
+        description: "Latitude coordinate of the forecasted location."
+      - name: longitude
+        description: "Longitude coordinate of the forecasted location."
+      - name: temperature_celsius
+        description: "Forecasted temperature in Celsius."
+      - name: precipitation_mm
+        description: "Forecasted precipitation in millimeters."
