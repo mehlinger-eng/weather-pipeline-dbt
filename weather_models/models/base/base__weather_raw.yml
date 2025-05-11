@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: base__weather_raw
+    description: "Base model selecting from the raw weather source table."
+    columns:
+      - name: document_id
+        description: "Unique document ID from Firestore."
+      - name: created_at
+        description: "Timestamp when the document was created in Firestore."
+      - name: payload
+        description: "Raw JSON payload containing weather fields."

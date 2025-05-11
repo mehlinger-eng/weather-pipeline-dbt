@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: stg_weather_forecast
+    description: "Staging model that flattens the weather JSON payload."
+    columns:
+      - name: document_id
+        description: "Unique document ID."
+      - name: firestore_created_at
+        description: "Original Firestore document creation timestamp."
+      - name: forecast_timestamp
+        description: "Timestamp for the forecasted weather reading."
+      - name: temperature_celsius
+        description: "Temperature in Celsius."
+      - name: precipitation_mm
+        description: "Precipitation in millimeters."
+      - name: latitude
+        description: "Latitude of the location."
+      - name: longitude
+        description: "Longitude of the location."
+      - name: location
+        description: "Name of the location (e.g. city)."
+      - name: ingestion_timestamp
+        description: "Time when the data was ingested into Firestore."
+      - name: bq_ingestion_timestamp
+        description: "Time when the data was loaded into BigQuery."
+      - name: operation_history
+        description: "JSON array describing document operations (create/update/delete)."
